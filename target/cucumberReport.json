@@ -1,0 +1,103 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 29,
+        "name": "To test To verify the error message at phone number",
+        "description": "",
+        "id": "to-test-add-customer-functionality;to-test-to-verify-the-error-message-at-phone-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy14.click(Unknown Source)\r\n\tat objectrepo.TelecomBase.btnClick(TelecomBase.java:61)\r\n\tat stepdefinition.AddCustomerStep.the_user_is_in_add_customer_page(AddCustomerStep.java:22)\r\n\tat ✽.the user is in add customer page(F:/Selenium-cucumber/Telecom/src/test/resources/Feature/AddCustomer.feature:30)\r\n",
+              "duration": 45511548,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "the user is in add customer page",
+            "match": {
+              "location": "AddCustomerStep.the_user_is_in_add_customer_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "The user fill in the invalid customer details",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "test"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "selenium"
+                ]
+              },
+              {
+                "cells": [
+                  "emailAddress",
+                  "test@gmail.com"
+                ]
+              },
+              {
+                "cells": [
+                  "address",
+                  "chennai"
+                ]
+              },
+              {
+                "cells": [
+                  "phNo",
+                  "abc"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19060,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "the user click the submit button",
+            "match": {
+              "location": "AddCustomerStep.the_user_click_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "the user should see  error message at phone number",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@us3"
+          }
+        ]
+      }
+    ],
+    "name": "To test add customer functionality",
+    "description": "",
+    "id": "to-test-add-customer-functionality",
+    "keyword": "Feature",
+    "uri": "F:/Selenium-cucumber/Telecom/src/test/resources/Feature/AddCustomer.feature",
+    "tags": []
+  }
+]
